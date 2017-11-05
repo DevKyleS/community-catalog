@@ -2,7 +2,7 @@ version: '2'
 services:
 {{- if eq .Values.EXPOSE_SERVICE "true"}}
   lb:
-    image: rancher/lb-service-haproxy:v0.6.2
+    image: rancher/lb-service-haproxy:v0.7.15
     ports:
     - ${influxdb_port}:8086/tcp
     labels:

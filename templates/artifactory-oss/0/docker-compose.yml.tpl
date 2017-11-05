@@ -49,7 +49,7 @@ services:
         }
   {{- if (.Values.PUBLISH_PORT)}}
   artifactory-lb:
-    image: rancher/lb-service-haproxy:v0.6.4
+    image: rancher/lb-service-haproxy:v0.7.15
     ports:
       - ${PUBLISH_PORT}:${PUBLISH_PORT}
   {{- end}}

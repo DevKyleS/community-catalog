@@ -45,7 +45,7 @@ services:
       io.rancher.container.hostname_override: container_name
     {{- if eq .Values.DEPLOY_LB "true"}}
   lb:
-    image: rancher/lb-service-haproxy:v0.6.2
+    image: rancher/lb-service-haproxy:v0.7.15
       {{- if (.Values.PUBLISH_PORT)}}
     ports:
       - ${PUBLISH_PORT}:8153/tcp

@@ -1,7 +1,7 @@
 version: '2'
 services:
   sonarqube-lb:
-    image: rancher/lb-service-haproxy:v0.7.6
+    image: rancher/lb-service-haproxy:v0.7.15
     ports:
       - ${http_port}:${http_port}
   sonarqube-storage:

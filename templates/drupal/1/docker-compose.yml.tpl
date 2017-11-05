@@ -14,7 +14,7 @@ services:
     restart: always
 
   drupal-lb:
-    image: rancher/lb-service-haproxy:v0.6.4
+    image: rancher/lb-service-haproxy:v0.7.15
     ports:
       - ${PUBLIC_PORT}:${PUBLIC_PORT}
 
