@@ -53,6 +53,7 @@
       required: false
     - variable: "confluence_home"
       label: "Confluence home directory"
+      default: /home/confluence
       description: |
         The location to mount the Confluence home directory on
       type: "string"
